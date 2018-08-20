@@ -23,13 +23,13 @@ method configurate(){
 		(0 .. largo).forEach { n => new ArbustoDerecha(new Position(ancho, n)) } // bordeDer
 		
 	//	TECLADO
-		M.onPressDo { granjero.plantaMaiz() }
-		T.onPressDo { granjero.plantaTrigo() }
-		O.onPressDo { granjero.plantaTomaco() }
-		R.onPressDo { granjero.rega() }
-		C.onPressDo { granjero.cosechaTodo() }
+		keyboard.m().onPressDo { granjero.plantaMaiz() }
+		keyboard.t().onPressDo { granjero.plantaTrigo() }
+		keyboard.o().onPressDo { granjero.plantaTomaco() }
+		keyboard.r().onPressDo { granjero.rega() }
+		keyboard.c().onPressDo { granjero.cosechaTodo() }
 		
-		SPACE.onPressDo{ game.say(granjero, "mi oro: " + granjero.getOro()) }  
+		keyboard.space().onPressDo{ game.say(granjero, "mi oro: " + granjero.getOro()) }  
 	}
 
 }
