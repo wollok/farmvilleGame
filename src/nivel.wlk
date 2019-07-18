@@ -17,10 +17,10 @@ method configurate(){
 		const ancho = game.width() - 1
 		const largo = game.height() - 1
 	
-		(1 .. ancho-1).forEach { n => new ArbustoAbajo(new Position(n, 0)) } // bordeAbajo
-		(1 .. ancho-1).forEach { n => new ArbustoArriba(new Position(n, largo)) } // bordeArriba 
-		(0 .. largo).forEach { n => new ArbustoIzquierda(new Position(0, n)) } // bordeIzq 
-		(0 .. largo).forEach { n => new ArbustoDerecha(new Position(ancho, n)) } // bordeDer
+		(1 .. ancho-1).forEach { n => new ArbustoAbajo(position = new Position(x = n, y = 0)).dibujar() } // bordeAbajo
+		(1 .. ancho-1).forEach { n => new ArbustoArriba(position = new Position(x =n, y = largo)).dibujar() } // bordeArriba 
+		(0 .. largo).forEach { n => new ArbustoIzquierda(position = new Position(x =0, y = n)).dibujar() } // bordeIzq 
+		(0 .. largo).forEach { n => new ArbustoDerecha(position = new Position(x =ancho, y = n)).dibujar() } // bordeDer
 		
 	//	TECLADO
 		keyboard.m().onPressDo { granjero.plantaMaiz() }
@@ -29,7 +29,7 @@ method configurate(){
 		keyboard.r().onPressDo { granjero.rega() }
 		keyboard.c().onPressDo { granjero.cosechaTodo() }
 		
-		keyboard.space().onPressDo{ game.say(granjero, "mi oro: " + granjero.getOro()) }  
+		keyboard.space().onPressDo{ game.say(granjero, "mi oro: " + granjero.oro()) }  
 	}
 
 }

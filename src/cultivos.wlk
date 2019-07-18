@@ -1,8 +1,8 @@
 import etapas.*
 
 class Cultivo {
-	var posicion
-	var etapa = ninio
+	var property position
+	var property etapa = ninio
 	
 	method crece() { etapa.crece(self) }
 	
@@ -11,10 +11,7 @@ class Cultivo {
 		etapa = muerto
 	}
 	
-	method setEtapa(_edad) { etapa = _edad }
-	method imagen() = etapa.getImagen(self)
-	method getPosicion() = posicion
-	method setPosicion(_posicion) { posicion = _posicion }
+	method image() = etapa.imagen(self)
 }
 
 

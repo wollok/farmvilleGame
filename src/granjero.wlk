@@ -1,9 +1,10 @@
+import wollok.game.*
 import cultivos.*
 
 object granjero {
-	var oro = 0
+	var property oro = 0
 	var cultivos = []
-	var posicion = new Position(3, 3)
+	var property position = new Position(x = 3, y = 3)
 	
 	method plantaMaiz() {
 		self.planta(new Maiz())
@@ -18,12 +19,12 @@ object granjero {
 	}
 
 	method planta(cultivo) {
-		posicion.clone().drawElement(cultivo)
+		position.clone().drawElement(cultivo)
 		cultivos.add(cultivo)
 	}
 	
 	method rega() {
-		var cultivosARegar = posicion.allElements()
+		var cultivosARegar = position.allElements()
 			.filter { obj => !(self == obj) }
 			
 		if (cultivosARegar.isEmpty())
@@ -39,8 +40,5 @@ object granjero {
 	
 	method sumaOro(cantidad) { oro += cantidad }
 
-	method imagen() = "player.png"
-	method getPosicion() = posicion
-	method getOro() = oro
-	method setPosicion(_posicion) { posicion = _posicion }
+	method image() = "player.png"
 }
