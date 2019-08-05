@@ -28,7 +28,7 @@ object granjero {
 			.filter { obj => !(self == obj) }
 			
 		if (cultivosARegar.isEmpty())
-			throw new Exception("Solo las plantas se pueden regar!")
+			throw new Exception(message = "Solo las plantas se pueden regar!")
 			
 		cultivosARegar.forEach { cultivo => cultivo.crece() }
 	}

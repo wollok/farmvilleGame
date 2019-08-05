@@ -1,6 +1,7 @@
 import wollok.game.*
 import arbustos.*
 import granjero.*
+import movimiento.*
 object nivel {
 
 method configurate(){
@@ -11,7 +12,8 @@ method configurate(){
 		game.ground("ground.png")
 		
 	//	VISUALES
-	 	game.addVisualCharacter(granjero)
+	 	game.addVisual(granjero)
+	 	movimiento.configurarFlechas(granjero)
 		
 	//	ARBUSTOS
 		const ancho = game.width() - 1
