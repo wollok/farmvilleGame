@@ -3,14 +3,25 @@ import wollok.game.*
 object movimiento {
 	
 	method configurarFlechas(visual){
-		keyboard.up().onPressDo{ self.mover(arriba,visual)}
-		keyboard.down().onPressDo{ self.mover(abajo,visual)}
-		keyboard.left().onPressDo{ self.mover(izquierda,visual)}
-		keyboard.right().onPressDo{ self.mover(derecha,visual)}
+		keyboard.up().onPressDo {
+			self.mover(arriba,visual)
+		}
+		keyboard.down().onPressDo { 
+			self.mover(abajo,visual)
+		}
+		keyboard.left().onPressDo{
+			self.mover(izquierda,visual)
+		}
+		keyboard.right().onPressDo{ 
+			self.mover(derecha,visual)
+		}
    }
 	
 	method mover(direccion,personaje){
-		personaje.position(direccion.siguiente(personaje.position()))
+		const nuevaPosicion = direccion.siguiente(personaje.position())
+		if (nuevaPosicion.x() >= 1 && nuevaPosicion.x() < game.width() - 1 &&
+				nuevaPosicion.y() >= 1 && nuevaPosicion.y() < game.height() - 1)
+		personaje.position(nuevaPosicion)
 	}	
 	
 }

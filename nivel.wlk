@@ -19,8 +19,8 @@ method configurate(){
 		const ancho = game.width() - 1
 		const largo = game.height() - 1
 	
-		(1 .. ancho-1).forEach { n => new Arbusto(position = new Position(x = n, y = 0)).dibujar() } // bordeAbajo
-		(1 .. ancho-1).forEach { n => new Arbusto(position = new Position(x =n, y = largo)).dibujar() } // bordeArriba 
+		(0 .. ancho-1).forEach { n => new Arbusto(position = new Position(x = n, y = 0)).dibujar() } // bordeAbajo
+		(0 .. ancho-1).forEach { n => new Arbusto(position = new Position(x =n, y = largo)).dibujar() } // bordeArriba 
 		(0 .. largo).forEach { n => new Arbusto(position = new Position(x =0, y = n)).dibujar() } // bordeIzq 
 		(0 .. largo).forEach { n => new Arbusto(position = new Position(x =ancho, y = n)).dibujar() } // bordeDer
 		
