@@ -3,38 +3,38 @@ import cultivos.*
 
 object granjero {
 	var property oro = 0
-	var cultivos = []
+	const cultivos = []
 	var property position = new Position(x = 3, y = 3)
 	
 	method plantaMaiz() {
-		self.planta(new Maiz())
+		self.planta(new Maiz(position = position))
 	}
 
 	method plantaTrigo() {
-		self.planta(new Trigo())
+		self.planta(new Trigo(position = position))
 	
 	}
 	method plantaTomaco() {
-		self.planta(new Tomaco())
+		self.planta(new Tomaco(position = position))
 	}
 
 	method planta(cultivo) {
-		position.clone().drawElement(cultivo)
+		game.addVisual(cultivo)
 		cultivos.add(cultivo)
 	}
 	
 	method rega() {
-		var cultivosARegar = position.allElements()
+		const cultivosARegar = position.allElements()
 			.filter { obj => !(self == obj) }
 			
 		if (cultivosARegar.isEmpty())
-			throw new Exception(message = "Solo las plantas se pueden regar!")
+			throw new DomainException(message = "Solo las plantas se pueden regar!", source = self)
 			
 		cultivosARegar.forEach { cultivo => cultivo.crece() }
 	}
 	
 	method cosechaTodo() {
-		cultivos.forEach { c => c.cosechate(self) }
+		cultivos.forEach { cultivo => cultivo.cosechate(self) }
 		cultivos.clear()
 	}
 	

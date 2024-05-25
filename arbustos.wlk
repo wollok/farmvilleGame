@@ -4,7 +4,7 @@ class Arbusto {
 	var property position
 	
 	method dibujar() {
-		position.drawElement(self)
+		game.addVisual(self)
 		game.whenCollideDo(self, { granjero => self.empuja(granjero) })
 	}
 

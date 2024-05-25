@@ -9,7 +9,7 @@ method configurate(){
 		game.title("FarmVille")
 		game.height(10)
 		game.width(10)
-		game.ground("ground.png")
+		game.boardGround("ground.png")
 		
 	//	VISUALES
 	 	game.addVisual(granjero)
