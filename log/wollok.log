@@ -76,3 +76,13 @@
 {"level":"info","message":"onRequest - STRONG_FILES_CHANGED:/home/dodain/workspace/wollok-dev/wollok-workspace/migracion-proyectos/farmvilleGame/video","timestamp":"2024-05-25T21:53:19.059Z"}
 {"level":"info","message":"onRequest - WORKSPACE_URI:file:///home/dodain/workspace/wollok-dev/wollok-workspace/migracion-proyectos/farmvilleGame","timestamp":"2024-05-25T21:53:19.340Z"}
 {"level":"info","message":"Removing diagnostics from /home/dodain/workspace/wollok-dev/wollok-workspace/migracion-proyectos/farmvilleGame/video","timestamp":"2024-05-25T21:53:19.482Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":295,"timestamp":"2024-05-25T21:55:49.709Z"}
+{"level":"info","message":"onRequest - WORKSPACE_URI:file:///home/dodain/workspace/wollok-dev/wollok-workspace/migracion-proyectos/farmvilleGame","timestamp":"2024-05-25T21:55:49.719Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":133,"timestamp":"2024-05-25T21:55:49.854Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":101,"timestamp":"2024-05-25T21:55:49.957Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":116,"timestamp":"2024-05-25T21:55:50.074Z"}
+{"exitCode":"SIGHUP","level":"info","message":"👾 Game executed pgmGame.farmville on /home/dodain/workspace/wollok-dev/wollok-workspace/migracion-proyectos/farmvilleGame","timeElapsed":648220,"timestamp":"2024-05-25T22:02:15.391Z"}
+{"level":"info","message":"onRequest - completionItem/resolve","timestamp":"2024-05-25T22:04:40.019Z"}
+{"exitCode":"SIGHUP","level":"info","message":"👾 Game executed pgmGame.farmville on /home/dodain/workspace/wollok-dev/wollok-workspace/migracion-proyectos/farmvilleGame","timeElapsed":118864,"timestamp":"2024-05-25T22:09:02.088Z"}
+{"exitCode":"SIGHUP","level":"info","message":"👾 Game executed pgmGame.farmville on /home/dodain/workspace/wollok-dev/wollok-workspace/migracion-proyectos/farmvilleGame","timeElapsed":249959,"timestamp":"2024-05-25T22:13:12.255Z"}
+{"exitCode":"SIGHUP","level":"info","message":"👾 Game executed pgmGame.farmville on /home/dodain/workspace/wollok-dev/wollok-workspace/migracion-proyectos/farmvilleGame","timeElapsed":155046,"timestamp":"2024-05-25T22:15:47.504Z"}

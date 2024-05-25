@@ -19,10 +19,10 @@ method configurate(){
 		const ancho = game.width() - 1
 		const largo = game.height() - 1
 	
-		(1 .. ancho-1).forEach { n => new ArbustoAbajo(position = new Position(x = n, y = 0)).dibujar() } // bordeAbajo
-		(1 .. ancho-1).forEach { n => new ArbustoArriba(position = new Position(x =n, y = largo)).dibujar() } // bordeArriba 
-		(0 .. largo).forEach { n => new ArbustoIzquierda(position = new Position(x =0, y = n)).dibujar() } // bordeIzq 
-		(0 .. largo).forEach { n => new ArbustoDerecha(position = new Position(x =ancho, y = n)).dibujar() } // bordeDer
+		(1 .. ancho-1).forEach { n => new Arbusto(position = new Position(x = n, y = 0)).dibujar() } // bordeAbajo
+		(1 .. ancho-1).forEach { n => new Arbusto(position = new Position(x =n, y = largo)).dibujar() } // bordeArriba 
+		(0 .. largo).forEach { n => new Arbusto(position = new Position(x =0, y = n)).dibujar() } // bordeIzq 
+		(0 .. largo).forEach { n => new Arbusto(position = new Position(x =ancho, y = n)).dibujar() } // bordeDer
 		
 	//	TECLADO
 		keyboard.m().onPressDo { granjero.plantaMaiz() }
