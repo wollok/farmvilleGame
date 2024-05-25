@@ -1,6 +1,6 @@
 # farmville-game
  
-[![Build Status](https://travis-ci.org/wollok/farmvilleGame.svg?branch=master)](https://travis-ci.org/wollok/farmvilleGame)
+[![Build Status](https://github.com/wollok/farmvilleGame/actions/workflows/ci.yml/badge.svg)](https://github.com/wollok/farmvilleGame/actions/workflows/ci.yml)
 
 Ejemplo de juego estilo Farmville hecho con Wollok-Game
 
